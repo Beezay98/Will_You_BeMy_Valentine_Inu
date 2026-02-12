@@ -109,7 +109,7 @@ function handleNoClick() {
     swapGif(gifStages[gifIndex])
 
     // Runaway starts at click 5
-    if (noClickCount >= 5 && !runawayEnabled) {
+    if (noClickCount >= 2 && !runawayEnabled) {
         enableRunaway()
         runawayEnabled = true
     }
@@ -142,4 +142,5 @@ function runAway() {
     noBtn.style.left = `${randomX}px`
     noBtn.style.top = `${randomY}px`
     noBtn.style.zIndex = '50'
+
 }
